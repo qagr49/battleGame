@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.BattleWindow">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0">
+         <bottom>
+            <HBox prefHeight="61.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="61.0" prefWidth="607.0">
+                     <children>
+                        <Pane layoutX="20.0" layoutY="-1.0" prefHeight="63.0" prefWidth="600.0">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="file:/C:/Users/Quentin/Desktop/images/bf%20wood%20label.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Pane>
+                        <Button fx:id="fight" layoutX="519.0" layoutY="18.0" mnemonicParsing="false" onAction="#fightButtonHandle" text="Fight!" />
+                        <Pane layoutY="2.0" prefHeight="24.0" prefWidth="164.0">
+                           <children>
+                              <Label layoutX="34.0" layoutY="14.0" text="HP: " textFill="RED">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="currentHP" layoutX="60.0" layoutY="14.0" prefHeight="17.0" prefWidth="44.0" text="current" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="104.0" layoutY="14.0" prefHeight="17.0" prefWidth="8.0" text="/" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label fx:id="maximumHP" layoutX="112.0" layoutY="14.0" prefHeight="17.0" prefWidth="39.0" text="max" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+         <center>
+            <ScrollPane fx:id="scrollPane" prefHeight="402.0" prefWidth="605.0" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="eventBox" prefHeight="398.0" prefWidth="565.0" />
+               </content>
+            </ScrollPane>
+         </center>
+         <top>
+            <Pane prefHeight="17.0" prefWidth="600.0">
+               <children>
+                  <Pane prefHeight="17.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/Quentin/Desktop/images/battlefield%20label.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Pane>
+                  <Label alignment="TOP_CENTER" layoutY="-1.0" prefHeight="23.0" prefWidth="600.0" text="Battlefield" textFill="#fff07c">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="309.0" prefWidth="20.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="402.0" prefWidth="20.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</Pane>

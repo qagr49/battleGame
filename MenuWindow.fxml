@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="403.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.MenuWindow">
+   <children>
+      <Pane prefHeight="403.0" prefWidth="583.0">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/Quentin/Desktop/images/menuWindow.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Pane>
+      <Label fx:id="myLabel" layoutX="68.0" layoutY="478.0" text="{gold}" textFill="#ffd82f">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="startBattleButton" layoutX="830.0" layoutY="278.0" mnemonicParsing="false" onAction="#startBattleClick" prefHeight="125.0" prefWidth="125.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/Quentin/Desktop/images/1%20stone%20block.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="83.0" layoutY="44.0" prefHeight="25.0" prefWidth="418.0" text="Welcome Home" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Candara" size="26.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="846.0" layoutY="307.0" mouseTransparent="true" prefHeight="66.0" prefWidth="92.0" text="Battle!" textFill="#ebebeb">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label layoutX="14.0" layoutY="478.0" text="Gold:" textFill="#ffd82f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets> 
+</Pane>
